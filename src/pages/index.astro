@@ -1,123 +1,63 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
----
-
-<Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+ ---
+ import Layout from '../layouts/Layout.astro';
+ ---
+ 
+ <Layout title="Ending the digital divide.">
+	 <main>
+		 <section class="w-screen h-screen flex items-center justify-center">
+			 <div class="sm:text-left text-center sm:ml-5">
+				 <div class="font-BebasNeue text-white text-6xl lg:text-9xl">
+					 <h1>Helping end the </h1>
+					 <h1> </h1>
+					 <h1 class="text-blue-700">digital divide</h1>
+				 </div>
+				 <div class="text-center flex text-white font-BebasNeue mt-4 space-x-5 justify-center lg:justify-between">
+					<div class="flex flex-col lg:flex-row items-center lg:justify-center space-y-3 lg:space-x-3">
+						<svg class="h-6 lg:h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+							<path d="M 192 32 L 256 32 Q 271 33 272 48 L 272 64 L 176 64 L 176 48 Q 177 33 192 32 L 192 32 Z M 144 48 L 144 64 L 128 64 Q 74 65 37 101 Q 1 138 0 192 L 0 448 Q 1 475 19 493 Q 37 511 64 512 L 384 512 Q 411 511 429 493 Q 447 475 448 448 L 448 192 Q 447 138 411 101 Q 374 65 320 64 L 304 64 L 304 48 Q 303 28 290 14 Q 276 1 256 0 L 192 0 Q 172 1 158 14 Q 145 28 144 48 L 144 48 Z M 160 96 L 288 96 L 320 96 Q 361 97 388 124 Q 415 151 416 192 L 416 448 Q 416 462 407 471 Q 398 480 384 480 L 368 480 L 368 368 L 368 320 Q 367 293 349 275 Q 331 257 304 256 L 144 256 Q 117 257 99 275 Q 81 293 80 320 L 80 368 L 80 480 L 64 480 Q 50 480 41 471 Q 32 462 32 448 L 32 192 Q 33 151 60 124 Q 87 97 128 96 L 160 96 L 160 96 Z M 112 480 L 112 384 L 336 384 L 336 480 L 112 480 L 112 480 Z M 144 160 Q 129 161 128 176 Q 129 191 144 192 L 304 192 Q 319 191 320 176 Q 319 161 304 160 L 144 160 L 144 160 Z M 336 352 L 112 352 L 112 320 Q 112 306 121 297 Q 130 288 144 288 L 304 288 Q 318 288 327 297 Q 336 306 336 320 L 336 352 L 336 352 Z" />
+						  </svg>
+						<a class="hover:cursor-pointer lg:text-2xl"  href="./students">For Students</a>
+						</div>
+					<div class="flex flex-col lg:flex-row items-center lg:justify-center space-y-3 lg:space-x-3">
+						<svg class="h-6 lg:h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
+							<path d="M 64 32 Q 50 32 41 41 L 41 41 Q 32 50 32 64 L 32 448 Q 32 462 41 471 Q 50 480 64 480 L 128 480 L 128 416 Q 129 389 147 371 Q 165 353 192 352 Q 219 353 237 371 Q 255 389 256 416 L 256 480 L 320 480 Q 334 480 343 471 Q 352 462 352 448 L 352 64 Q 352 50 343 41 Q 334 32 320 32 L 64 32 L 64 32 Z M 224 416 Q 224 402 215 393 L 215 393 Q 206 384 192 384 Q 178 384 169 393 Q 160 402 160 416 L 160 480 L 224 480 L 224 416 L 224 416 Z M 128 512 L 64 512 Q 37 511 19 493 Q 1 475 0 448 L 0 64 Q 1 37 19 19 Q 37 1 64 0 L 320 0 Q 347 1 365 19 Q 383 37 384 64 L 384 448 Q 383 475 365 493 Q 347 511 320 512 L 256 512 L 224 512 L 160 512 L 128 512 L 128 512 Z M 64 120 Q 66 98 88 96 L 136 96 Q 158 98 160 120 L 160 168 Q 158 190 136 192 L 88 192 Q 66 190 64 168 L 64 120 L 64 120 Z M 96 128 L 96 160 L 128 160 L 128 128 L 96 128 L 96 128 Z M 248 96 L 296 96 Q 318 98 320 120 L 320 168 Q 318 190 296 192 L 248 192 Q 226 190 224 168 L 224 120 Q 226 98 248 96 L 248 96 Z M 256 160 L 288 160 L 288 128 L 256 128 L 256 160 L 256 160 Z M 64 248 Q 66 226 88 224 L 136 224 Q 158 226 160 248 L 160 296 Q 158 318 136 320 L 88 320 Q 66 318 64 296 L 64 248 L 64 248 Z M 96 256 L 96 288 L 128 288 L 128 256 L 96 256 L 96 256 Z M 248 224 L 296 224 Q 318 226 320 248 L 320 296 Q 318 318 296 320 L 248 320 Q 226 318 224 296 L 224 248 Q 226 226 248 224 L 248 224 Z M 256 288 L 288 288 L 288 256 L 256 256 L 256 288 L 256 288 Z" />
+						  </svg>
+						<a class="hover:cursor-pointer lg:text-2xl" href="./business">For Businesses</a>
+					</div>
+					<div class="flex flex-col lg:flex-row items-center lg:justify-center space-y-3 lg:space-x-3">
+						<svg class="h-6 lg:h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+							<path d="M 125 0 L 144 0 Q 212 2 257 47 Q 302 92 304 160 L 304 256 Q 303 271 288 272 Q 273 271 272 256 L 272 176 L 243 176 Q 180 174 139 133 Q 98 92 96 29 Q 96 17 105 9 Q 113 0 125 0 L 125 0 Z M 144 32 L 128 32 Q 130 80 163 111 Q 195 143 243 144 L 271 144 Q 264 96 229 64 Q 194 33 144 32 L 144 32 Z M 336 176 L 336 160 Q 336 152 335 144 Q 383 142 414 111 Q 446 79 448 32 L 432 32 Q 397 32 369 48 Q 341 65 324 92 Q 317 75 308 59 Q 330 32 362 16 Q 394 0 432 0 L 451 0 Q 463 0 471 9 Q 480 17 480 29 Q 478 91 438 132 Q 397 173 336 176 L 336 176 Z M 151 317 Q 171 304 195 304 L 344 304 Q 368 305 384 320 Q 399 336 400 360 Q 400 373 395 384 L 400 384 L 495 328 Q 508 320 522 320 L 524 320 Q 546 321 561 335 Q 575 350 576 372 Q 575 400 552 416 L 433 494 Q 405 512 372 512 L 16 512 Q 1 511 0 496 Q 1 481 16 480 L 372 480 Q 395 480 415 467 L 535 389 Q 544 383 544 372 Q 542 354 524 352 L 522 352 Q 516 352 511 355 L 413 414 Q 409 416 405 416 L 344 416 L 320 416 L 256 416 Q 241 415 240 400 Q 241 385 256 384 L 320 384 L 344 384 Q 366 382 368 360 Q 366 338 344 336 L 195 336 Q 181 336 169 344 L 89 397 L 85 400 L 80 400 L 16 400 Q 1 399 0 384 Q 1 369 16 368 L 75 368 L 151 317 L 151 317 Z" />
+						  </svg>
+						<a class="hover:cursor-pointer lg:text-2xl" href="./donors">For Donors</a>
+					</div>
+				</div>
+				
+				 <div class="text-center sm:text-left flex items-center justify-center text-gray-500 font-OpenSans italic font-light mt-10 mx-2 ">
+					 Southside Software is dedicated to bridging the digital divide in tech cities, ensuring equal access to technology and digital literacy for all.
+				 </div>
+			 </div>
+		 </section>
+	 </main>
+ </Layout>
+ 
+ <style>
+	 section {
+		 background: radial-gradient(circle at center, black, blue 200%);
+		 transition: background 0.5s;
+	 }
+ </style>
+ 
+ <script>
+	 const sections = document.querySelectorAll("section");
+	 if (sections) {
+		 document.addEventListener('mousemove', function(e) {
+			 let x = e.clientX / window.innerWidth * 100;
+			 let y = e.clientY / window.innerHeight * 100;
+			 // Increase the size of the radial gradient
+			 sections.forEach((s) => {
+				 s.style.background = `radial-gradient(circle at ${x}% ${y}%, black, blue 200%)`;
+			 })		
+		 });
+	 }
+ </script>
+ 
