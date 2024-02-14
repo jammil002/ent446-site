@@ -5,9 +5,8 @@
  
  <Layout title="Ending the digital divide.">
 	 <main>
-	<!-- <Navbar /> -->
-		 <section class="w-screen h-screen flex items-center justify-center">
-			 <div class="sm:text-left text-center sm:ml-5">
+		 <section class="radial-section w-screen h-screen flex items-center justify-center" id="section1">
+			 <div class="lg:text-left text-center sm:ml-5">
 				 <div class="font-BebasNeue text-white text-6xl lg:text-9xl">
 					 <h1>Helping end the </h1>
 					 <h1> </h1>
@@ -33,32 +32,36 @@
 						<a class="hover:cursor-pointer lg:text-2xl" href="https://www.craft.me/s/GdEaitbD6J0B7r">For Donors</a>
 					</div>
 				</div>
-				
-				 <div class="text-center sm:text-left flex items-center justify-center text-gray-500 font-OpenSans italic font-light mt-10 mx-2 ">
+				 <div class="text-center md:text-left lg:text-left flex items-center justify-center text-gray-500 font-OpenSans italic font-light mt-10 mx-2 mb-10 ">
 					 Southside Software is dedicated to bridging the digital divide in tech cities, ensuring equal access to technology and digital literacy for all.
 				 </div>
+				 <a class="text-center text-5xl lg:text-8xl text-white font-BebasNeue hover:text-red-500 cursor-pointer" href="/donate/">Donate Here</a>
 			 </div>
 		 </section>
 	 </main>
  </Layout>
  
  <style>
-	 section {
+	section {
+		background-color: #00005c;
+	}
+	 .radial-section {
 		 background: radial-gradient(circle at center, black, blue 200%);
 		 transition: background 0.5s;
 	 }
  </style>
  
  <script>
-	 const sections = document.querySelectorAll("section");
-	 if (sections) {
+	 const section = document.getElementById("section1")
+	 if (section) {
 		 document.addEventListener('mousemove', function(e) {
 			 let x = e.clientX / window.innerWidth * 100;
 			 let y = e.clientY / window.innerHeight * 100;
 			 // Increase the size of the radial gradient
-			 sections.forEach((s) => {
-				 s.style.background = `radial-gradient(circle at ${x}% ${y}%, black, blue 200%)`;
-			 })		
+			 section.style.background = `radial-gradient(circle at ${x}% ${y}%, black, blue 200%)`;
+			//  sections.forEach((s) => {
+			// 	 s.style.background = `radial-gradient(circle at ${x}% ${y}%, black, blue 200%)`;
+			//  })		
 		 });
 	 }
  </script>
